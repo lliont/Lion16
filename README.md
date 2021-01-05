@@ -1,7 +1,7 @@
 # Lion
 Lion FPGA CPU/Computer
 
-The Lion computer project files for the Lion 16-bit FPGA based CPU in C#.
+The Lion computer project files with the Lion 16-bit FPGA based CPU.
 
 Lion CPU and Lion Computer which is a homebrew 16-bit computer based on this cpu, are made by Theodoulos Liontakis.
 
