@@ -1,0 +1,258 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2012 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 32-bit
+# Version 12.1 Build 243 01/31/2013 Service Pack 1.33 SJ Web Edition
+# Date created = 11:10:35  June 14, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		LionSystem_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "12.1 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:50:00  MAY 06, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.1 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name SMART_RECOMPILE OFF
+
+# Pin & Location Assignments
+# ==========================
+
+# Classic Timing Assignments
+# ==========================
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP "-40"
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 100
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS OFF
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name FAMILY "Cyclone V"
+set_global_assignment -name TOP_LEVEL_ENTITY LionSystem
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE 5CEFA2F23I7
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+
+# EDA Netlist Writer Assignments
+# ==============================
+set_global_assignment -name EDA_SIMULATION_TOOL "<None>"
+
+# Power Estimation Assignments
+# ============================
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+
+# start EDA_TOOL_SETTINGS(eda_simulation)
+# ---------------------------------------
+
+	# EDA Netlist Writer Assignments
+	# ==============================
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT NONE -section_id eda_simulation
+
+# end EDA_TOOL_SETTINGS(eda_simulation)
+# -------------------------------------
+
+# ------------------------
+# start ENTITY(LionSystem)
+
+	# start DESIGN_PARTITION(Top)
+	# ---------------------------
+
+		# Incremental Compilation Assignments
+		# ===================================
+
+	# end DESIGN_PARTITION(Top)
+	# -------------------------
+
+# end ENTITY(LionSystem)
+# ----------------------
+set_global_assignment -name OPTIMIZATION_MODE BALANCED
+set_global_assignment -name ALLOW_REGISTER_RETIMING ON
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name PROJECT_IP_REGENERATION_POLICY ALWAYS_REGENERATE_IP
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_NCE_PIN OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ROUTER_EFFORT_MULTIPLIER 1.2
+set_location_assignment PIN_B15 -to R
+set_location_assignment PIN_C15 -to G
+set_location_assignment PIN_A14 -to B
+set_location_assignment PIN_B16 -to HSYN
+set_location_assignment PIN_C16 -to VSYN
+set_location_assignment PIN_V18 -to Reset
+set_location_assignment PIN_AA13 -to HOLD
+set_location_assignment PIN_AB15 -to RD
+set_location_assignment PIN_M16 -to MISO
+set_location_assignment PIN_K22 -to MOSI
+set_location_assignment PIN_L17 -to SCLK
+set_location_assignment PIN_M22 -to SPICS
+set_location_assignment PIN_AA15 -to Rx
+set_location_assignment PIN_Y15 -to Tx
+set_global_assignment -name RESERVE_DCLK_AFTER_CONFIGURATION "USE AS PROGRAMMING PIN"
+set_global_assignment -name RESERVE_DATA0_AFTER_CONFIGURATION "COMPILER CONFIGURED"
+set_global_assignment -name RESERVE_DATA1_AFTER_CONFIGURATION "COMPILER CONFIGURED"
+set_location_assignment PIN_Y14 -to Int
+set_location_assignment PIN_M9 -to iClock
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name ENABLE_DRC_SETTINGS ON
+set_global_assignment -name STRATIXV_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name OUTPUT_IO_TIMING_ENDPOINT "NEAR END"
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
+set_location_assignment PIN_L18 -to VSYN2
+set_location_assignment PIN_L19 -to HSYN2
+set_location_assignment PIN_N19 -to AUDIOB
+set_location_assignment PIN_AA1 -to KCLK
+set_location_assignment PIN_AA2 -to KDATA
+set_location_assignment PIN_N16 -to RTC_CLK
+set_location_assignment PIN_K21 -to RTC_DATA
+set_location_assignment PIN_K17 -to RTC_CE
+set_location_assignment PIN_N1 -to JOYST1[0]
+set_location_assignment PIN_W2 -to JOYST1[1]
+set_location_assignment PIN_Y3 -to JOYST1[2]
+set_location_assignment PIN_U1 -to JOYST1[3]
+set_location_assignment PIN_U2 -to JOYST1[4]
+set_location_assignment PIN_M21 -to NOISEO
+set_location_assignment PIN_M18 -to AUDIOA
+set_location_assignment PIN_M20 -to AUDIOC
+set_location_assignment PIN_A13 -to PG
+set_location_assignment PIN_D13 -to PR
+set_location_assignment PIN_C13 -to PB
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to G
+set_location_assignment PIN_AA18 -to ADo[2]
+set_location_assignment PIN_AA17 -to ADo[3]
+set_location_assignment PIN_AA20 -to ADo[4]
+set_location_assignment PIN_AA19 -to ADo[5]
+set_location_assignment PIN_Y20 -to ADo[6]
+set_location_assignment PIN_Y19 -to ADo[7]
+set_location_assignment PIN_AB21 -to ADo[8]
+set_location_assignment PIN_AB20 -to ADo[9]
+set_location_assignment PIN_AA22 -to ADo[10]
+set_location_assignment PIN_AB22 -to ADo[11]
+set_location_assignment PIN_W22 -to ADo[12]
+set_location_assignment PIN_Y22 -to ADo[13]
+set_location_assignment PIN_Y21 -to ADo[14]
+set_location_assignment PIN_W21 -to ADo[15]
+set_location_assignment PIN_V20 -to A18o
+set_location_assignment PIN_V21 -to A17o
+set_location_assignment PIN_U22 -to A16o
+set_location_assignment PIN_G6 -to D[8]
+set_location_assignment PIN_H6 -to D[9]
+set_location_assignment PIN_G8 -to D[10]
+set_location_assignment PIN_H8 -to D[11]
+set_location_assignment PIN_F7 -to D[12]
+set_location_assignment PIN_E7 -to D[13]
+set_location_assignment PIN_D6 -to D[14]
+set_location_assignment PIN_C6 -to D[15]
+set_location_assignment PIN_U21 -to JOYST2[0]
+set_location_assignment PIN_U20 -to JOYST2[1]
+set_location_assignment PIN_R22 -to JOYST2[2]
+set_location_assignment PIN_T22 -to JOYST2[3]
+set_location_assignment PIN_P22 -to JOYST2[4]
+set_location_assignment PIN_B5 -to ASo
+set_location_assignment PIN_A5 -to DSo
+set_location_assignment PIN_Y16 -to Holdao
+set_location_assignment PIN_A7 -to IA[1]
+set_location_assignment PIN_A8 -to IA[0]
+set_location_assignment PIN_A9 -to IACK
+set_location_assignment PIN_A10 -to IOo
+set_location_assignment PIN_B10 -to Iv[1]
+set_location_assignment PIN_C9 -to Iv[0]
+set_location_assignment PIN_G10 -to RWo
+set_global_assignment -name OPTIMIZE_SSN "NORMAL COMPILATION"
+set_global_assignment -name VHDL_FILE XY_Disp.vhd
+set_global_assignment -name VHDL_FILE LionCPU16r.vhd
+set_global_assignment -name VHDL_FILE video_640x480_M.vhd
+set_global_assignment -name VHDL_FILE UART.vhd
+set_global_assignment -name VHDL_FILE SPI.vhd
+set_global_assignment -name VHDL_FILE LPLL2.vhd
+set_global_assignment -name BDF_FILE 3_to_8.bdf
+set_global_assignment -name BDF_FILE regs.bdf
+set_global_assignment -name BDF_FILE ALU_LA4.bdf
+set_global_assignment -name BDF_FILE 74251_l.bdf
+set_global_assignment -name VHDL_FILE LionSystem.vhd
+set_global_assignment -name SDC_FILE LionSystem.sdc
+set_global_assignment -name CDF_FILE output_files/LionSystem.cdf
+set_global_assignment -name CDF_FILE output_files/Chain1.cdf
+set_location_assignment PIN_E12 -to SPICS2
+set_location_assignment PIN_D12 -to SCLK2
+set_location_assignment PIN_B12 -to MOSI2
+set_location_assignment PIN_C11 -to LDAC
+set_global_assignment -name PLACEMENT_EFFORT_MULTIPLIER 1.0
+set_global_assignment -name OPTIMIZATION_TECHNIQUE BALANCED
+set_global_assignment -name SYNCHRONIZER_IDENTIFICATION AUTO
+set_global_assignment -name OPTIMIZE_IOC_REGISTER_PLACEMENT_FOR_TIMING "PACK ALL IO REGISTERS"
+set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT EXTRA
+set_location_assignment PIN_B11 -to MOSI3
+set_global_assignment -name INFER_RAMS_FROM_RAW_LOGIC OFF
+set_global_assignment -name AUTO_RAM_RECOGNITION ON
+set_location_assignment PIN_A12 -to MOSI4
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to MISO
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to KCLK
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to KDATA
+set_location_assignment PIN_Y17 -to ADo[1]
+set_location_assignment PIN_AB18 -to ADo[0]
+set_location_assignment PIN_B13 -to BRIB
+set_location_assignment PIN_A15 -to BRIG
+set_location_assignment PIN_F10 -to BRIR
+set_location_assignment PIN_C2 -to D[7]
+set_location_assignment PIN_C1 -to D[6]
+set_location_assignment PIN_D3 -to D[5]
+set_location_assignment PIN_E2 -to D[4]
+set_location_assignment PIN_G2 -to D[3]
+set_location_assignment PIN_G1 -to D[2]
+set_location_assignment PIN_L2 -to D[1]
+set_location_assignment PIN_L1 -to D[0]
+set_location_assignment PIN_N2 -to ER_SEL
+set_location_assignment PIN_D9 -to ERH
+set_location_assignment PIN_E9 -to ERL
+set_location_assignment PIN_W19 -to RW2
+set_instance_assignment -name CLAMPING_DIODE ON -to KCLK
+set_instance_assignment -name CLAMPING_DIODE ON -to KDATA
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to JOYST*
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
