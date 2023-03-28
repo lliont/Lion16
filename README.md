@@ -15,6 +15,8 @@ Liontiny.asm is the Basic source file that when compiled and it's output Liontin
 
 Lion1.sch and Lion1.brd are eagle files for the Lion base board.
 
+Hardware design and software released under the Creative Commons License BY-NC-SA https://creativecommons.org/licenses/by-nc-sa/4.0/
+
 Theodoulos Liontakis
 
 Project Pages:
